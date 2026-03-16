@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dream Holidays - Rezervă vacanța de vis</title>
+
+    <meta name="author" content="Nicolae Bianca Mihaela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calatoria ta incepe cu Dream Holiday, vacante de vis la cel mai bun pret, in locatiile tale preferate.">
+    <meta name="keywords" content="Dream Holidays, vacanta, hotel, excursii, pachet turistic">
+
+    <link rel="icon" type="image/png" href="./resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./resurse/css/general.css" />
+    <link rel="stylesheet" href="./resurse/css/nav.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dream Holidays</h1>
+        <nav>
+            <ul class="meniu">
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Acasă</a>
+                    <ul>
+                        <li><a href="#oferte-sezon"> Oferte Actuale</a></li>
+                        <li><a href="#evenimente"> Evenimente</a></li>
+                        <li><a href="#galerie">Galerie Foto</a></li>
+                        <li><a href="#prezentare-video"> Prezentare Video</a>
+                        </li>
+                        <li><a href="#faq">Intrebări frecvente</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> Destinații</a></li>
+                <li><a href="#"><i class="fa-solid fa-suitcase-rolling"></i> Pachete Speciale</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="grid-pagina">
+            <section id="welcome">
+                <hgroup>
+                    <h2>
+                        <i class="fa-solid fa-earth-americas"></i> Bine ați venit pe site-ul Dream Holidays
+                    </h2>
+                    <p>Locul unde incepe calatoria ta de neuitat!</p>
+                </hgroup>
+                <p class="intro">Suntem agenția care îți transformă <b>vacanța de vis</b> ăn realitate prin <b>rezervări
+                        online</b> simple și <b>pachete turistice</b> premium.
+                    Selectați perioada, locația si hotelul dorit și sunteți gata de vacanță!</p>
+            </section>
+
+            <section id="oferte-sezon">
+                <h2>
+                    <i class="fa-solid fa-plane fa-bounce"></i> Ofertele noastre curente
+                </h2>
+                <div class="promotii-container">
+
+                    <div class="promotii">
+                        <h3>Promoții de sezon</h3>
+                        <p>Destinațiile favorite din această luna sunt:</p>
+                        <ul class="lista-orase">
+                            <li><b>Italia</b>: Roma</li>
+                            <li><b>Italia</b>: Milano</li>
+                            <li><b>Olanda</b>: Amsterdam</li>
+                            <li><b>Spania</b>: Madrid</li>
+                            <li><b>Spania</b>: Valencia</li>
+                            <li class="break">Un city break special:</li>
+                            <li><b>Ungaria</b>: Budapesta, <b>Republica Ceha</b>: Praga, <b>Austria</b>: Viena</li>
+                        </ul>
+                        <p>Rezervați până la finalul lunii Aprilie și puteți beneficia de un discount de 10%!</p>
+                    </div>
+
+                    <div class="colaj-poze">
+                        <img src="./resurse/imagini/Poze-promotii/roma.webp" class="foto-colaj p1" alt="Roma">
+                        <img src="./resurse/imagini/Poze-promotii/milano.jpg" class="foto-colaj p2" alt="Milano">
+                        <img src="./resurse/imagini/Poze-promotii/amsterdam.jpg" class="foto-colaj p3" alt="Amsterdam">
+                        <img src="./resurse/imagini/Poze-promotii/madrid.webp" class="foto-colaj p4" alt="Madrid">
+                        <img src="./resurse/imagini/Poze-promotii/valencia.jpg" class="foto-colaj p5" alt="Valencia">
+                        <img src="./resurse/imagini/Poze-promotii/budapesta.jpg" class="foto-colaj p6" alt="Budapesta">
+                        <img src="./resurse/imagini/Poze-promotii/praga.webp" class="foto-colaj p7" alt="Praga">
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="calcule">
+                <h3>Cum calculăm reducerea ta:</h3>
+                <p>Prețul final (P) se calculează scăzând procentul de reducere (r) din prețul inițial (P_i):
+                </p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <msub>
+                        <mi>P</mi>
+                        <mi>f</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>P</mi>
+                        <mi>i</mi>
+                    </msub>
+                    <mo>·</mo>
+                    <mo>(</mo>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <mfrac>
+                        <mi>r</mi>
+                        <mn>100</mn>
+                    </mfrac>
+                    <mo>)</mo>
+                </math>
+            </section>
+
+            <section id="evenimente">
+                <hgroup>
+                    <h2>Evenimente și Workshop-uri</h2>
+                    <p>Nu rata ocazia de a învăța lucruri noi!</p>
+                </hgroup>
+                <table>
+                    <caption>Calendarul evenimentelor și workshop-urilor Dream Holidays 2026</caption>
+                    <thead>
+                        <tr>
+                            <th>Eveniment</th>
+                            <th>Locație</th>
+                            <th>Dată și Interval Orar</th>
+                            <th>Preț Acces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Webinar: Cum să călătorești cu buget redus</b></td>
+                            <td rowspan="2">Online (Platforma Zoom)</td>
+                            <td><time datetime="2026-05-15T10:00">15 Mai, 10:00 - 12:00</time></td>
+                            <td>Gratuit</td>
+                        </tr>
+                        <tr>
+                            <td><b>Consultanță Live: Destinații de Vară</b></td>
+                            <td><time datetime="2026-05-20T18:00">20 Mai, 18:00 - 19:00</time></td>
+                            <td>Gratuit</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tombola Verii</b></td>
+                            <td>Sediul Central / Live Facebook</td>
+                            <td><time datetime="2026-06-01T18:00">1 Iunie, 18:00 - 19:00</time></td>
+                            <td>50 RON</td>
+                        </tr>
+                        <tr>
+                            <td><b>Workshop: Fotografia de peisaj în vacanță</b></td>
+                            <td>Parcul Herăstrău, București</td>
+                            <td><time datetime="2026-06-15T16:00">15 Iunie, 16:00 - 20:00</time></td>
+                            <td>120 RON</td>
+                        </tr>
+                        <tr>
+                            <td><b>Prezentare: Destinații exotice pentru toamnă</b></td>
+                            <td>Showroom Dream Holidays</td>
+                            <td><time datetime="2026-07-10T11:00">10 Iulie, 11:00 - 13:00</time></td>
+                            <td>Gratuit</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Accesul la evenimentele offline se face pe bază de înscriere prealabilă.
+                                Plățile se fac online.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="galerie">
+                <h2 class="titlu-galerie">Galerie Foto</h2>
+                <div class="galerie-split">
+
+                    <div class="caseta-galerie-foto">
+
+                        <figure>
+                            <a href="./resurse/imagini/Galerie-foto/bali.jpg">
+                                <picture>
+                                    <source srcset="./resurse/imagini/Galerie-foto/bali.jpg"
+                                        media="(min-width: 1024px)">
+
+                                    <source srcset="./resurse/imagini/Galerie-foto/bali-mediu.jpg"
+                                        media="(min-width: 601px)">
+
+                                    <img src="./resurse/imagini/Galerie-foto/bali-mic.jpg" alt="Plajă exotică în Bali"
+                                        title="Bali - Relaxare totală în paradisul tropical" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption>Bali, Indonezia</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/maldive.webp"
+                                    media="(min-width: 1024px)">
+
+                                <source srcset="./resurse/imagini/Galerie-foto/Maldive-mediu.jpg"
+                                    media="(min-width: 601px)">
+
+                                <img src="./resurse/imagini/Galerie-foto/Maldive-mic.jpg"
+                                    alt="Resort de lux cu bungalow-uri pe apa în Maldive"
+                                    title="Maldive - Apa de cristal și nisip alb fin" loading="lazy">
+
+                            </picture>
+                            <figcaption>Arhipelagul Maldive</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/madeira.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/madeira-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/madeira-mic.jpg"
+                                    alt="Faleza stâncoasă și Oceanul Atlantic în Madeira"
+                                    title="Madeira - Grădina plutitoare a Atlanticului" loading="lazy">
+                            </picture>
+                            <figcaption>Madeira, Portugalia</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/grecia.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/grecia-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/grecia-mic.jpg"
+                                    alt="Case albe și biserici cu dom albastru în Santorini, Grecia"
+                                    title="Grecia - Istorie, soare și Marea Egee" loading="lazy">
+                            </picture>
+                            <figcaption>Insulele Grecești</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/malta.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/malta-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/malta-mic.jpg"
+                                    alt="Vedere panoramică a portului Valletta din Malta"
+                                    title="Malta - Cetatea cavalerilor ioaniți" loading="lazy">
+                            </picture>
+                            <figcaption>Valletta, Malta</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/thailanda.jpg"
+                                    media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/thailanda-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/thailanda-mic.jpg"
+                                    alt="Formațiuni stâncoase în Golful Phang Nga, Thailanda"
+                                    title="Thailanda - Tărâmul zâmbetelor și al templelor" loading="lazy">
+                            </picture>
+                            <figcaption>Phuket, Thailanda</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="caseta-galerie-foto">
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/Paris.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/Paris-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/Paris-mic.jpg"
+                                    alt="Turnul Eiffel iluminat la apus în Paris"
+                                    title="Paris - Capitala romantismului și a artei" loading="lazy">
+                            </picture>
+                            <figcaption>Paris, Franța</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/londra.webp" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/londra-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/londra-mic.jpg"
+                                    alt="Palatul Westminster și Big Ben din Londra"
+                                    title="Londra - Istorie regală și vibe modern" loading="lazy">
+                            </picture>
+                            <figcaption>Londra, Marea Britanie</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/Strasburg.jpg"
+                                    media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/Strasburg-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/Strasburg-mic.jpg"
+                                    alt="Case cu bârne de lemn pe malul râului în Strasburg"
+                                    title="Strasburg - Farmecul Europei Centrale" loading="lazy">
+                            </picture>
+                            <figcaption>Strasburg, Franța</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/Tokyo.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/Tokyo-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/Tokyo-mic.jpg"
+                                    alt="Intersecția Shibuya aglomerată din Tokyo cu neoane"
+                                    title="Tokyo - Contrast între tradiție și tehnologie" loading="lazy">
+                            </picture>
+                            <figcaption>Tokyo, Japonia</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/NewYork.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/NewYork-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/NewYork-mic.jpg"
+                                    alt="Zgârie-nori din New York și Times Square noaptea"
+                                    title="NYC - Orașul care nu doarme niciodată" loading="lazy">
+                            </picture>
+                            <figcaption>New York, SUA</figcaption>
+                        </figure>
+
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/Galerie-foto/dubai.jpg" media="(min-width: 1024px)">
+                                <source srcset="./resurse/imagini/Galerie-foto/dubai-mediu.jpg"
+                                    media="(min-width: 601px)">
+                                <img src="./resurse/imagini/Galerie-foto/dubai-mic.jpg"
+                                    alt="Burj Khalifa și orizontul modern al Dubaiului"
+                                    title="Dubai - Lux și arhitectură futuristă în deșert" loading="lazy">
+                            </picture>
+                            <figcaption>Dubai, Emirate</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="prezentare-video">
+                <h2>Descoperă destinațiile noastre</h2>
+
+                <iframe name="zona-video" src="https://www.youtube.com/embed/yH9OIsi2c4k" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <div id="video-tabs">
+                    <a href="https://www.youtube.com/embed/rwJD8pAKIAQ" target="zona-video">Destinații Europa</a>
+                    <a href="https://www.youtube.com/embed/jVOafUxB2a8" target="zona-video">Aventuri Exotice</a>
+                    <a href="https://www.youtube.com/embed/yH9OIsi2c4k" target="zona-video">Parcuri de distractii</a>
+                </div>
+            </section>
+
+            <section id="faq">
+                <hgroup>
+                    <h2>Întrebări frecvente</h2>
+                    <p>Tot ce trebuie să știi înainte de a rezerva</p>
+                </hgroup>
+
+                <div class="faq-container">
+                    <details>
+                        <summary>Ce este inclus într-un pachet de tip City Break?</summary>
+                        <p>Un City Break include, de regulă, biletele de avion dus-întors și cazarea pentru 2-4 nopți
+                            într-un oraș turistic. Unele pachete pot include și micul dejun sau transferul de la
+                            aeroport.</p>
+                    </details>
+
+                    <details>
+                        <summary>Cum pot anula o rezervare efectuată online?</summary>
+                        <p>Anularea se poate face din contul de utilizator sau contactând serviciul clienți. Rețineți că
+                            politica de rambursare depinde de unitatea de cazare și de intervalul de timp până la data
+                            plecării.</p>
+                    </details>
+
+                    <details>
+                        <summary>Este necesară asigurarea medicală de călătorie?</summary>
+                        <p>Deși nu este obligatorie pentru toate destinațiile, noi <b>recomandăm cu tărie</b> încheierea
+                            unei asigurări pentru a fi protejat împotriva costurilor medicale neprevăzute.</p>
+                    </details>
+
+                    <details>
+                        <summary>Ce documente sunt necesare pentru copiii minori?</summary>
+                        <p>Minorii au nevoie de pașaport propriu. Dacă aceștia călătoresc cu un singur părinte sau cu o
+                            altă persoană, este necesară o procură notarială legalizată din partea celuilalt părinte sau
+                            a ambilor părinți.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="statistici">
+                <hgroup>
+                    <h2>Preferințele călătorilor noștri</h2>
+                    <p>Analiza alegerilor în funcție de tipul destinației</p>
+                </hgroup>
+
+                <div class="stat-item">
+                    <p><strong>Destinații Tropicale (Plajă & Relaxare):</strong></p>
+                    <meter value="85" min="0" max="100" low="30" high="70" optimum="90"></meter>
+                    <span>85% din clienți caută soarele în această lună.</span>
+                </div>
+
+                <div class="stat-item">
+                    <p><strong>Orașe Istorice (Cultură & Muzee):</strong></p>
+                    <meter value="25" min="0" max="100" low="40" high="80" optimum="60"></meter>
+                    <span>25% din clienți aleg explorarea istorică în extrasezon.</span>
+                </div>
+            </section>
+
+            <section id="resurse-externe">
+                <h2>Resurse utile și statistici</h2>
+                <p>Pentru mai multe detalii, vizitați site-ul partener:
+                    <a href="https://www.booking.com" target="_blank" rel="noopener">Booking.com</a>.
+                </p>
+
+                <p>Referință oficială către studiile de turism global: <br>
+                    <a
+                        href="https://ro.wikipedia.org/wiki/Turism#Statistici_globale_privind_turismul_international_2026">
+                        https://ro.wikipedia.org/wiki/Turism<wbr>#Statistici<wbr>_globale<wbr>_privind<wbr>_turismul<wbr>_internațional<wbr>_2026
+                    </a>
+                </p>
+            </section>
+
+            <section id="documente">
+                <h2>Broșura de Vacanță 2026</h2>
+                <object data="./resurse/document/brosura.pdf" type="application/pdf" style="width:100%; height:500px;">
+                    <p>Browserul tău nu suportă afișarea PDF-ului.
+                        <a href="./resurse/document/brosura.pdf">Descarcă broșura aici.</a>
+                    </p>
+                </object>
+            </section>
+        </div>
+    </main>
+
+    <footer id="subsol">
+        <div class="footer-content">
+            <address>
+                <strong>Contactează-ne:</strong>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i> Telefon:
+                    <a href="tel:+40722000000">+40 722 000 000</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i> Email:
+                    <a href="mailto:contact@dreamholidays.ro">contact@dreamholidays.ro</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> Adresa:<br>
+                    <a href="https://www.google.com/maps/place/Facultatea+de+Matematic%C4%83+%C8%99i+Informatic%C4%83/@44.4355355,26.0970118,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">
+                        Strada Academiei, Nr. 14,<br>
+                        Sector 1, București,<br>
+                        România
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fa-brands fa-whatsapp"></i> Chat rapid:
+                    <a href="https://wa.me/40722000000" target="_blank">WhatsApp Direct</a>
+                </p>
+            </address>
+
+            <hr>
+            <p>
+                <small>
+                    Copyright &copy; 2026 Dream Holidays.
+                    Creat la data de:
+                    <time datetime="2026-03-09">9 Martie 2026</time>.
+                </small>
+            </p>
+
+            <p><a href="#">Înapoi sus</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
