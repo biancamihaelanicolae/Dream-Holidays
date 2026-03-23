@@ -1,0 +1,48 @@
+:root {
+    --font-baza: 16px;
+    --spatiere-unitate: 1rem;
+    --linie-tabel: 1px;
+    --culoare-reset-text: #05161A;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px; 
+    width: 100%;    
+    height: 100%;   
+}
+
+div, span, h1, h2, h3, p, a, img, ul, li, table, tbody, tr, th, td, section, main, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+b, strong {
+    font-weight: 700; 
+}
+
+i, em {
+    font-style: italic; 
+}
+
+ul, ol {
+    list-style: none; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
