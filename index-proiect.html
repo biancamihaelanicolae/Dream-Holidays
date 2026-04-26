@@ -18,10 +18,9 @@
     <link rel="manifest" href="/resurse/imagini/favicon/site.webmanifest" />
     <link rel="stylesheet" href="/resurse/css/general.css" />
     <link rel="stylesheet" href="/resurse/css/nav.css" />
-    <link rel="stylesheet" href="./resurse/css/reset.css"> 
-    <link rel="stylesheet" href="./resurse/css/general.css">
-    <link rel="stylesheet" href="./resurse/css/nav.css">
-
+    <link rel="stylesheet" href="./resurse/css/nav700.css" media = "screen and (max-width: 700px)">
+    <link rel="stylesheet" href="./resurse/css/reset.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,19 +34,36 @@
 <body>
     <header>
         <h1>Dream Holidays</h1>
-        <nav>
+        <nav id="variante-meniu">
+
+            <label for="ch-menu" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="ch-menu">
+
             <ul class="meniu">
+                <li class="btn-acasa">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="text-ascuns">Acasă</span>
+                    </a>
+                </li>
                 <li>
-                    <a href="index.html"><i class="fa-solid fa-house"></i> Acasă</a>
-                    <ul>
-                        <li><a href="#oferte-sezon"> Oferte Actuale</a></li>
-                        <li><a href="#evenimente"> Evenimente</a></li>
+                    <a href="#"><i class="fa-solid fa-layer-group"></i> Pagina Principala</a>
+                    <ul class="submeniu">
+                        <li><a href="#oferte-sezon">Oferte Actuale</a></li>
+                        <li><a href="#evenimente">Evenimente</a></li>
                         <li><a href="#galerie">Galerie Foto</a></li>
-                        <li><a href="#prezentare-video"> Prezentare Video</a>
-                        </li>
-                        <li><a href="#faq">Intrebări frecvente</a></li>
+                        <li><a href="#prezentare-video">Prezentare Video</a></li>
                     </ul>
                 </li>
+                <li>
+                <a href="#"><i class="fa-solid fa-images"></i> Galerii</a>
+                <ul class="submeniu">
+                    <li><a href="galerie-statica.html">Galerie Statică</a></li>
+                    <li><a href="galerie-dinamica.html">Galerie Dinamică</a></li>
+                </ul>
+            </li>
                 <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> Destinații</a></li>
                 <li><a href="#"><i class="fa-solid fa-suitcase-rolling"></i> Pachete Speciale</a></li>
                 <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
@@ -154,7 +170,8 @@
                             </tr>
                             <tr>
                                 <td class="col-colorat"><b>Consultanță Live: Destinații de Vară</b></td>
-                                <td class="col-colorat"><time datetime="2026-05-20T18:00">20 Mai, 18:00 - 19:00</time></td>
+                                <td class="col-colorat"><time datetime="2026-05-20T18:00">20 Mai, 18:00 - 19:00</time>
+                                </td>
                                 <td class="col-alb">Gratuit</td>
                             </tr>
                             <tr>
@@ -485,6 +502,8 @@
                     <time datetime="2026-03-09">9 Martie 2026</time>.
                 </small>
             </p>
+
+            <p>Acesta este un proiect scolar!</p>
 
             <p><a href="#" id="back-to-top" data-tooltip="Înapoi sus"> <span>&#5123;</span></a></p>
         </div>

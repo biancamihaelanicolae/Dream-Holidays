@@ -44,8 +44,8 @@ ul.meniu li {
     height: var(--inaltime-buton);
     background-color: var(--culoare-fundal);
     border: 1px solid var(--culoare-contur);
-    background-color: white;
-    color: black;
+    background-color: var(--culoare-contur);
+    color: white;
     text-align: center;
     /* text-decoration: none; */
     /* margin-right: 10px; */
@@ -82,9 +82,9 @@ ul.meniu li:hover ul {
 }
 
 ul.meniu li a {
-    color: black;
+    color: white;
     text-decoration: none;
-    transition: all 1s linear;
+    transition: color 0.5s linear;
     font-weight: bold;
     padding: 0 15px;
     display: flex;
@@ -96,9 +96,24 @@ ul.meniu li a {
     white-space: nowrap;
 }
 
+.btn-acasa .text-ascuns {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    transition: max-width 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+}
+
+.btn-acasa:hover .text-ascuns {
+    max-width: 100px;
+    opacity: 1;
+    margin-left: 8px; 
+}
+
 ul.meniu>li a:hover,
 ul.meniu li:hover .text-icon a {
-    color: white;
+    color:  var(--culoare-detaliu); 
 }
 
 ul.meniu li:hover {
@@ -140,5 +155,40 @@ ul.meniu li:hover {
     ul.meniu ul {
         position: static;
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 701px) {
+    
+    ul.meniu li {
+        width: auto !important;
+        min-width: 60px;
+        height: 50px;
+    }
+
+    ul.meniu > li > a {
+        font-size: 0; 
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    ul.meniu > li > a i {
+        font-size: 1.4rem !important; 
+        margin-right: 0 !important;   
+    }
+
+    ul.meniu .submeniu li a {
+        font-size: 0.8rem !important;
+        white-space: nowrap;
+    }
+
+    ul.meniu li:hover .submeniu {
+        min-width: 180px; 
+        display: block;
+    }
+
+    .btn-acasa .text-ascuns {
+        display: none !important;
     }
 }
