@@ -1,0 +1,67 @@
+nav ul.meniu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--culoare-contur);
+  width: 100%;
+}
+nav ul.meniu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul.meniu li {
+  position: relative;
+  width: 250px;
+  background-color: var(--culoare-contur);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul.meniu li a {
+  color: var(--text-meniu);
+}
+nav ul.meniu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+nav ul.meniu li ul li:nth-child(1) {
+  filter: brightness(1.1);
+}
+nav ul.meniu li ul li:nth-child(2) {
+  filter: brightness(1.2);
+}
+nav ul.meniu li ul li:nth-child(3) {
+  filter: brightness(1.3);
+}
+nav ul.meniu li:hover {
+  background-color: var(--culoare-accent);
+}
+nav ul.meniu li:hover > ul {
+  display: block;
+  animation: aparitieMeniu 0.5s forwards;
+}
+nav ul.meniu li:hover > a {
+  color: var(--culoare-detaliu);
+}
+
+@keyframes aparitieMeniu {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=nav-style.css.map */

@@ -1,0 +1,57 @@
+{
+    "cale_baza": "/resurse/imagini/erori",
+    "eroare_default":{
+        "titlu":"Eroare !!!",
+        "text": "A survenit o eroare.",
+        "imagine":"eroare.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"404",
+            "text": "Serverul nu a fost gasit",
+            "imagine":"404.png"
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"403 ",
+            "text": "Ai greșit ruta!",
+            "imagine":"403.webp"
+        },
+        {
+            "identificator":400,
+            "status":true,
+            "titlu":"400 - bad request",
+            "text": "Cerere gresita",
+            "imagine":"400.png"
+        },
+        
+        {
+            "identificator":1,
+            "status":false,
+            "titlu":"Site în lucru",
+            "text": "Incercam să remediem problema cât mai repede!",
+            "imagine":"1.jpg"
+        },
+        
+        {
+            "identificator":2,
+            "status":false,
+            "titlu":"Eroare baza date",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"2.jpg"
+        },
+        
+        {
+            "identificator":3,
+            "status":false,
+            "titlu":"Date gresite",
+            "text": "Verificati datele",
+            "imagine":"3.jpg"
+        }
+        
+    ]
+}
+  

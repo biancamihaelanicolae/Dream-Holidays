@@ -1,0 +1,74 @@
+
+$latime-buton: 250px;
+$inaltime-buton: 40px;
+$tranzitie-standard: all 0.3s ease;
+
+%stil-comun-buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $inaltime-buton;
+    width: 100%;
+    transition: $tranzitie-standard;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--culoare-contur);
+    width: 100%;
+
+    ul.meniu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            width: $latime-buton;
+            background-color: var(--culoare-contur);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            a {
+                @extend %stil-comun-buton; 
+                color: var(--text-meniu);
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    @for $i from 1 through 3 {
+                        &:nth-child(#{$i}) {
+                            filter: brightness(1 + $i * 0.1); 
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: var(--culoare-accent);
+                
+                & > ul {
+                    display: block;
+                    animation: aparitieMeniu 0.5s forwards;
+                }
+                
+                & > a {
+                    color: var(--culoare-detaliu);
+                }
+            }
+        }
+    }
+}
+
+@keyframes aparitieMeniu {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
