@@ -28,7 +28,7 @@ for (let folder of vect_foldere) {
     }
 }
 
-app.use("/resurse", express.static(path.join(__dirname, "resurse")))
+app.use("/resurse", express.static(path.join(__dirname, "resurse")));
 
 // app.get("/cale", function (req, res) {
 //     res.send("Salut, <b > ai ajuns </b> pe calea /cale");

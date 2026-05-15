@@ -1,7 +1,7 @@
 ::cue {
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--culoare-contur);
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #video-vtt video {
