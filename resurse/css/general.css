@@ -16,11 +16,10 @@
     grid-template-areas:
         "welcome    welcome    welcome"
         "promotii   promotii   promotii"
-        "calcule galerie evenimente"
-        "faq    galerie    evenimente"
-        "faq      video    statistici"
-        "resurse-externe resurse-externe resurse-externe"
-        "video-vtt video-vtt video-vtt"
+        "calcule video-vtt evenimente"
+        "faq    resurse-externe    evenimente"
+        "faq      statistici   video"
+        "galerie    galerie     galerie"
         "documente  documente documente";
 }
 
@@ -82,7 +81,6 @@ body {
 h1,
 h2,
 h3,
-.titlu-galerie,
 .bonbon-font {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -120,7 +118,7 @@ main {
 }
 
 header h1 {
-    font-family: 'Bonbon', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 4rem;
     text-align: center;
     color: var(--culoare-contur);
@@ -133,6 +131,12 @@ h3 {
     color: var(--culoare-contur);
 }
 
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+
 p {
     border: 1px solid var(--culoare-fundal);
 }
@@ -140,7 +144,7 @@ p {
 h2 i {
     color: var(--culoare-accent);
     margin-right: 15px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .fa-bounce {
@@ -195,67 +199,6 @@ h2 i {
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-
-.titlu-galerie {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.galerie-split {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-#galerie figure {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#galerie figure:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#galerie picture img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-#galerie figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: var(--culoare-contur);
-    font-size: 0.9rem;
-}
-
-.caseta-galerie-foto {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 15px;
-    background: #fff;
-    border: solid var(--culoare-accent);
-    border-radius: 12px;
-}
-
-.caseta-galerie-foto:hover {
-    border-color: var(--culoare-accent);
-}
-
-.caseta-galerie-foto img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 6px;
 }
 
 .container-tabel {
@@ -622,7 +565,7 @@ a:visited {
     color: var(--culoare-accent);
 }
 
-a[href^="http"]::before {
+a[href^="http"]::before{
     content: "⮳ ";
     font-size: 1.5em;
 }
@@ -745,30 +688,6 @@ main a:active {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    #grid-pagina {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "welcome    welcome"
-            "promotii   calcule"
-            "evenimente evenimente"
-            "galerie    galerie"
-            "video      statistici"
-            "resurse-externe resurse-externe"
-            "faq faq"
-            "video-vtt video-vtt"
-            "documente documente";
-    }
-
-    .galerie-split {
-        gap: 15px;
-    }
-
-    #galerie figure img {
-        height: 150px;
-    }
-}
-
 @media screen and (max-width: 700px) {
     :root {
         --margine-pagina: 15px;
@@ -777,10 +696,6 @@ main a:active {
     #grid-pagina {
         display: block;
         padding: 0;
-    }
-
-    .galerie-split {
-        flex-direction: column;
     }
 
     .promotii-container {
@@ -796,10 +711,6 @@ main a:active {
 
     .colaj-poze img {
         height: 100px;
-    }
-
-    #galerie figure img {
-        height: 120px;
     }
 
     #video-tabs {

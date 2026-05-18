@@ -1,7 +1,40 @@
-@use '../../node_modules/bootstrap/scss/bootstrap.scss' with 
-(
-    $primary: red,
-    $secondary:purple,
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
     
-)
+    $primary: #00A8CC,   
+    $secondary: #072E33, 
+    $info: #E3F2FD,      
+    $warning: #FFD700,   
+    
+    $body-color: #05161A, 
 
+    $btn-link-color: #00A8CC,      
+    $accordion-color: #05161A,     
+    $nav-link-color: #ffffff, 
+    $nav-link-hover-color: #FFD700,
+
+    $grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 700px,   
+        lg: 1000px,  
+        xl: 1200px,
+        xxl: 1400px
+    ),
+    
+    $border-radius: 12px,    
+    $border-radius-lg: 15px,
+
+    $h1-font-size: 5rem,   
+    $h2-font-size: 3rem,
+    $h3-font-size: 2rem,
+    
+    $font-family-sans-serif: ("Montserrat", sans-serif),
+    $headings-font-family: ("Oswald", sans-serif), 
+    
+    $enable-shadows: true,
+    $hr-opacity: 1,
+
+    $font-weight-base: 500,       
+    $headings-font-weight: 700,
+    $spacer: 2rem
+);

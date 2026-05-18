@@ -10,7 +10,7 @@ nav ul.meniu li a {
 }
 
 nav {
-  background-color: var(--culoare-contur);
+  background-color: rgba(10, 54, 34, 0.85);
   width: 100%;
 }
 nav ul.meniu {
@@ -22,7 +22,7 @@ nav ul.meniu {
 nav ul.meniu li {
   position: relative;
   width: 250px;
-  background-color: var(--culoare-contur);
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 nav ul.meniu li a {

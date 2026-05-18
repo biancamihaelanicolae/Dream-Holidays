@@ -1,0 +1,95 @@
+{
+    "cale_galerie": "resurse/imagini/galerie",
+    "imagini": [
+        {
+            "fisier": "alicante.jpg",
+            "titlu": "Alicante",
+            "text_descriere": "Oraș portuar vibrant pe Costa Blanca din Spania.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "bali.jpg",
+            "titlu": "Bali",
+            "text_descriere": "Paradisul indonezian, renumit pentru peisaje și spiritualitate.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "barcelona.jpg",
+            "titlu": "Barcelona",
+            "text_descriere": "Arhitectură Gaudi și viață de noapte efervescentă.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "dubai.jpg",
+            "titlu": "Dubai",
+            "text_descriere": "Lux și inovație în inima deșertului arab.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "grecia.jpg",
+            "titlu": "Grecia",
+            "text_descriere": "Insule idilice, istorie antică și ape cristaline.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "londra.jpg",
+            "titlu": "Londra",
+            "text_descriere": "Un amestec cosmopolit de istorie, artă și cultură.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "madeira.jpg",
+            "titlu": "Madeira",
+            "text_descriere": "Grădina plutitoare a Atlanticului, perfectă pentru drumeții.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "maldive.jpg",
+            "titlu": "Maldive",
+            "text_descriere": "Bungalow-uri deasupra apei turcoaz și relaxare totală.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "malta.jpg",
+            "titlu": "Malta",
+            "text_descriere": "O insulă-cetate cu o istorie bogată a cavalerilor.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "NewYork.jpg",
+            "titlu": "New York",
+            "text_descriere": "Orașul care nu doarme niciodată, plin de energie și atracții.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "paris.jpg",
+            "titlu": "Paris",
+            "text_descriere": "Capitala romantismului, a modei și a artei.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "Strasburg.jpg",
+            "titlu": "Strasbourg",
+            "text_descriere": "Farmecul alsacian cu piețe de Crăciun de poveste.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "bansko.jpg",
+            "titlu": "Bansko",
+            "text_descriere": "Cea mai populară stațiune de schi din Bulgaria.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "thailanda.jpg",
+            "titlu": "Thailanda",
+            "text_descriere": "Plaje exotice, temple antice și o cultură vibrantă.",
+            "anotimp": "primavara"
+        },
+        {
+            "fisier": "tokyo.jpg",
+            "titlu": "Tokyo",
+            "text_descriere": "Un amestec fascinant de tradiție și ultra-modernitate.",
+            "anotimp": "primavara"
+        }
+    ]
+}

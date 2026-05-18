@@ -1,0 +1,133 @@
+@keyframes curgereValuri {
+    0% {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    100% {
+        -webkit-mask-position: 0 10px;
+        mask-position: 0 10px;
+    }
+}
+
+#text {
+    position: relative;
+    margin-bottom: 1.5em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 120%;
+        height: 220%;
+        background-color: rgba(0, 0, 0, 0.001); 
+        z-index: 10;
+    }
+
+    &:hover #text-reflectat {
+        animation: curgereValuri 3s infinite linear;
+    }
+    
+}
+
+#text-reflectat {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    transform: scaleY(-1);
+    opacity: 0.4 !important; 
+    font-style: italic;
+
+    -webkit-mask-image: repeating-radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 1) 0px, rgba(0, 0, 0, 1) 5px, rgba(0, 0, 0, 0) 6px, rgba(0, 0, 0, 0) 10px);
+    mask-image: repeating-radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 1) 0px, rgba(0, 0, 0, 1) 5px, rgba(0, 0, 0, 0) 6px, rgba(0, 0, 0, 0) 10px);
+ 
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+}
+
+
+
+
+
+.separator-stiva {
+    height: 15px; 
+    border: none; 
+    margin: 2rem 0; 
+
+    background-size: 60px 5px; 
+    background-repeat: repeat-x; 
+
+    background-image: 
+        
+        linear-gradient(
+            to right, 
+            transparent 15%, 
+            var(--culoare-detaliu, var(--culoare-detaliu)) 15%, 
+            var(--culoare-detaliu, var(--culoare-detaliu)) 45%, 
+            transparent 45%
+        ),
+        
+        linear-gradient(
+            to right, 
+            transparent 25%, 
+            var(--bs-secondary, var(--bs-secondary)) 25%, 
+            var(--bs-secondary, var(--bs-secondary)) 60%, 
+            transparent 60%
+        ),
+        
+        linear-gradient(
+            to right, 
+            transparent 15%, 
+            var(--culoare-accent,var(--culoare-accent) )  15%, 
+            var(--culoare-accent,var(--culoare-accent) )  45%, 
+            transparent 45%
+        );
+
+    
+    background-position: 
+        0 0,       /* Sus */
+        0 5px,     /* Mijloc */
+        0 10px;    /* Jos */
+}
+
+
+
+
+#bgvid-DreamHolidays {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -100;
+
+    filter: brightness(0.4); 
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+#grid-pagina section {
+    background-color: rgb(223, 223, 223,0.8); 
+    border: 2px solid rgba(10, 54, 34, 0.6);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 22rem !important;
+        color: var(--bs-white, var(--culoare-contur))!important;
+        text-shadow: 5px 5px 0px var(--culoare-detaliu)!important;
+        margin-bottom: 10rem !important;
+        margin-top: 0%;
+    }
+ }
+
+footer {
+    background-color: rgba(10, 54, 34, 0.85) !important;
+ }
